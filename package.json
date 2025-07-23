@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A mathematically-harmonious design system for Web3 interfaces",
   "private": true,
+  "packageManager": "npm@10.2.5",
   "workspaces": [
     "packages/*",
     "site"

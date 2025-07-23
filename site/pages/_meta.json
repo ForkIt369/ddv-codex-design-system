@@ -1,0 +1,20 @@
+{
+  "index": "Introduction",
+  "docs": "Documentation",
+  "examples": "Examples",
+  "playground": "Playground",
+  "-- Divider --": {
+    "type": "separator",
+    "title": "Links"
+  },
+  "github_link": {
+    "title": "GitHub ↗",
+    "href": "https://github.com/ForkIt369/ddv-codex-design-system",
+    "newWindow": true
+  },
+  "npm_link": {
+    "title": "npm ↗",
+    "href": "https://www.npmjs.com/org/ddv-codex",
+    "newWindow": true
+  }
+}

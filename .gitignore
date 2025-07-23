@@ -63,3 +63,4 @@ logs/
 # Documentation site
 site/.next/
 site/out/
+.vercel
