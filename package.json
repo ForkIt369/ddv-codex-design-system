@@ -1,0 +1,52 @@
+{
+  "name": "ddv-codex-design-system",
+  "version": "1.0.0",
+  "description": "A mathematically-harmonious design system for Web3 interfaces",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "site"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "publish": "turbo run build lint test && changeset publish",
+    "docs:dev": "npm run dev --workspace=site",
+    "docs:build": "npm run build --workspace=site",
+    "docs:preview": "npm run preview --workspace=site"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ddv-codex-design-system"
+  },
+  "keywords": [
+    "design-system",
+    "ui",
+    "react",
+    "components",
+    "web3",
+    "broverse",
+    "ddv-codex"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/ddv-codex-design-system/issues"
+  },
+  "homepage": "https://ddv-codex.design"
+}
