@@ -1,9 +1,8 @@
 {
-  "buildCommand": "cd site && npm install --legacy-peer-deps && npm run build",
-  "installCommand": "echo 'Skipping root install'",
+  "buildCommand": "echo 'No build needed'",
+  "installCommand": "echo 'No install needed'",
   "framework": null,
-  "outputDirectory": "site/.next",
-  "ignoreCommand": "git diff HEAD^ HEAD --quiet .",
+  "outputDirectory": ".",
   "github": {
     "enabled": true,
     "autoAlias": true
