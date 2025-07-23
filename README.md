@@ -4,7 +4,8 @@
 
 [![Version](https://img.shields.io/npm/v/@ddv-codex/core)](https://www.npmjs.com/package/@ddv-codex/core)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Documentation](https://img.shields.io/badge/docs-live-brightgreen)](https://ddv-codex.design)
+[![Documentation](https://img.shields.io/badge/docs-live-brightgreen)](https://ddv-codex-docs.vercel.app)
+[![Deploy Documentation](https://github.com/ForkIt369/ddv-codex-design-system/actions/workflows/deploy.yml/badge.svg)](https://github.com/ForkIt369/ddv-codex-design-system/actions/workflows/deploy.yml)
 
 ## 🌟 Overview
 
@@ -110,7 +111,7 @@ Four AI agents with distinct personalities and color themes:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ddv-codex-design-system.git
+git clone https://github.com/ForkIt369/ddv-codex-design-system.git
 cd ddv-codex-design-system
 
 # Install dependencies
@@ -146,8 +147,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 ---
 
 <p align="center">
-  <a href="https://ddv-codex.design">Documentation</a> •
-  <a href="https://github.com/yourusername/ddv-codex-design-system">GitHub</a> •
+  <a href="https://ddv-codex-docs.vercel.app">Documentation</a> •
+  <a href="https://github.com/ForkIt369/ddv-codex-design-system">GitHub</a> •
   <a href="https://twitter.com/ddvcodex">Twitter</a> •
   <a href="https://discord.gg/ddvcodex">Discord</a>
 </p>
