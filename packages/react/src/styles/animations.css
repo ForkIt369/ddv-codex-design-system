@@ -1,0 +1,126 @@
+/* DDV Codex Animation Styles */
+
+/* Stripe sliding animation for progress bars */
+@keyframes stripe-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.animate-stripe-slide {
+  animation: stripe-slide 1s linear infinite;
+}
+
+/* Shine effect for progress bars */
+@keyframes shine {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+.animate-shine {
+  animation: shine 2s ease-in-out infinite;
+}
+
+/* Indeterminate progress animation */
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Fade in animations */
+.animate-in {
+  animation-duration: var(--animation-duration, 280ms);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Zoom animations */
+.zoom-in-95 {
+  animation-name: zoom-in-95;
+}
+
+@keyframes zoom-in-95 {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Slide animations */
+.slide-in-from-top-1 {
+  animation-name: slide-in-from-top-1;
+}
+
+@keyframes slide-in-from-top-1 {
+  from {
+    transform: translateY(-0.25rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-in-from-bottom-2 {
+  animation-name: slide-in-from-bottom-2;
+}
+
+@keyframes slide-in-from-bottom-2 {
+  from {
+    transform: translateY(0.5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-in-from-left-1\/2 {
+  animation-name: slide-in-from-left-half;
+}
+
+@keyframes slide-in-from-left-half {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-from-top-\[48\%\] {
+  animation-name: slide-in-from-top-48;
+}
+
+@keyframes slide-in-from-top-48 {
+  from {
+    transform: translateY(-48%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
