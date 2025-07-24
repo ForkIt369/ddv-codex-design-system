@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from 'react';
+import { useState, forwardRef } from 'react';
 import { Button } from '../Button/Button';
 import { Card, CardContent } from '../Card/Card';
 import { cn } from '../../utils/cn';
@@ -196,7 +196,6 @@ const StatusDot = ({ agent, size = 'md' }: { agent: string; size?: 'md' | 'lg' }
 
 // Dropdown menu component
 const DropdownMenu = ({ 
-  agent, 
   walletInfo, 
   showBalance, 
   showNetwork, 

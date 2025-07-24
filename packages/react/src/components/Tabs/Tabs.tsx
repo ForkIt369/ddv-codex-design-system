@@ -78,7 +78,7 @@ export const Tabs: React.FC<TabsProps> = ({
         agent,
         variant,
         size,
-        orientation,
+        orientation: orientation || undefined,
       }}
     >
       <div className={cn(tabsVariants({ orientation }), className)}>

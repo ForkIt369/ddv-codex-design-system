@@ -124,3 +124,103 @@
     transform: translateY(0);
   }
 }
+
+/* Shimmer animation for Skeleton component */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* Draw line animation for LineChart */
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw-line {
+  animation: draw-line 560ms ease-out forwards;
+}
+
+/* Accordion animations */
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 280ms ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 280ms ease-out;
+}
+
+/* Animation modifiers */
+.fade-in-0 {
+  --tw-enter-opacity: 0;
+}
+
+.fade-out-0 {
+  --tw-exit-opacity: 0;
+}
+
+.zoom-in-0 {
+  --tw-enter-scale: 0;
+}
+
+.zoom-in-95 {
+  --tw-enter-scale: 0.95;
+}
+
+.zoom-out-95 {
+  --tw-exit-scale: 0.95;
+}
+
+.scale-in-0 {
+  --tw-enter-scale: 0;
+}
+
+.slide-in-from-bottom {
+  --tw-enter-translate-y: 100%;
+}
+
+/* Stroke dash array for SVG animations */
+.stroke-dasharray-\[1000\] {
+  stroke-dasharray: 1000;
+}
+
+.stroke-dashoffset-\[1000\] {
+  stroke-dashoffset: 1000;
+}
+
+/* Transform origin utilities */
+.origin-center {
+  transform-origin: center;
+}
+
+/* Rounded inherit utility */
+.rounded-inherit {
+  border-radius: inherit;
+}

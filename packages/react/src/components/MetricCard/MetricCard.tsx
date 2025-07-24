@@ -41,12 +41,6 @@ export const MetricCard = forwardRef<HTMLDivElement, MetricCardProps>(
     // Determine trend from change if not explicitly set
     const actualTrend = trend || (change !== undefined ? (change > 0 ? 'up' : change < 0 ? 'down' : 'neutral') : undefined);
 
-    // Format change percentage
-    const formatChange = (val: number) => {
-      const formatted = Math.abs(val).toFixed(1);
-      return val > 0 ? `+${formatted}%` : `${formatted}%`;
-    };
-
     // Agent-specific gradient colors for sparklines
     const sparklineGradients = {
       bigSis: 'from-cyan-500/20 to-cyan-500',

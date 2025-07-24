@@ -334,7 +334,7 @@ export const ConfirmModal: React.FC<ConfirmModalProps> = ({
         <ModalActions>
           <Button
             variant="ghost"
-            agent={agent}
+            agent={agent || undefined}
             onClick={onClose}
             disabled={loading}
           >

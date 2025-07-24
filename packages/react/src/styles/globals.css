@@ -1,0 +1,126 @@
+/* DDV Codex Design System - Global Styles */
+
+/* Import Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* CSS Variables for DDV Codex */
+@layer base {
+  :root {
+    /* Mathematical Constants */
+    --ddv-phi: 1.618;
+    --ddv-sqrt-10: 3.162;
+    
+    /* Base Spacing Unit (8px) */
+    --ddv-base: 8px;
+    
+    /* Spacing Scale */
+    --ddv-space-0: 0;
+    --ddv-space-0.5: calc(var(--ddv-base) * 0.5);  /* 4px */
+    --ddv-space-1: var(--ddv-base);                /* 8px */
+    --ddv-space-2: calc(var(--ddv-base) * 2);      /* 16px */
+    --ddv-space-3: calc(var(--ddv-base) * 3);      /* 24px */
+    --ddv-space-4: calc(var(--ddv-base) * 4);      /* 32px */
+    --ddv-space-5: calc(var(--ddv-base) * 5);      /* 40px */
+    --ddv-space-6: calc(var(--ddv-base) * 6);      /* 48px */
+    --ddv-space-7: calc(var(--ddv-base) * 7);      /* 56px */
+    --ddv-space-8: calc(var(--ddv-base) * 8);      /* 64px */
+    --ddv-space-9: calc(var(--ddv-base) * 9);      /* 72px */
+    --ddv-space-10: calc(var(--ddv-base) * 10);    /* 80px */
+    --ddv-space-11: calc(var(--ddv-base) * 11);    /* 88px */
+    --ddv-space-12: calc(var(--ddv-base) * 12);    /* 96px */
+    
+    /* Typography Scale (Golden Ratio) */
+    --ddv-text-xs: 0.694rem;     /* 11.1px */
+    --ddv-text-sm: 0.833rem;     /* 13.3px */
+    --ddv-text-base: 1rem;       /* 16px */
+    --ddv-text-lg: 1.2rem;       /* 19.2px */
+    --ddv-text-xl: 1.44rem;      /* 23px */
+    --ddv-text-2xl: 1.728rem;    /* 27.6px */
+    --ddv-text-3xl: 2.074rem;    /* 33.2px */
+    --ddv-text-4xl: 2.488rem;    /* 39.8px */
+    --ddv-text-5xl: 2.986rem;    /* 47.8px */
+    
+    /* Animation Timing (280ms = 8 * 35) */
+    --ddv-duration-instant: 0ms;
+    --ddv-duration-fast: 140ms;      /* 280ms / 2 */
+    --ddv-duration-base: 280ms;      /* Base duration */
+    --ddv-duration-slow: 560ms;      /* 280ms * 2 */
+    --ddv-duration-slower: 1120ms;   /* 280ms * 4 */
+    
+    /* Dark Theme Colors */
+    --ddv-bg-primary: #0a0a0a;
+    --ddv-bg-secondary: #1a1a1a;
+    --ddv-bg-tertiary: #2a2a2a;
+    
+    --ddv-text-primary: rgba(255, 255, 255, 0.9);
+    --ddv-text-secondary: rgba(255, 255, 255, 0.7);
+    --ddv-text-muted: rgba(255, 255, 255, 0.5);
+    
+    /* Agent Colors */
+    --ddv-bigsis: #00D4FF;    /* Cyan - Position 6 */
+    --ddv-bro: #FF9500;       /* Orange - Position 16 */
+    --ddv-lilsis: #D946EF;    /* Purple - Position 20 */
+    --ddv-cbo: #30D158;       /* Green - Position 8 */
+    
+    /* Border Radius */
+    --ddv-radius-sm: 4px;
+    --ddv-radius-md: 8px;
+    --ddv-radius-lg: 12px;
+    --ddv-radius-xl: 16px;
+    --ddv-radius-2xl: 24px;
+    --ddv-radius-full: 9999px;
+  }
+}
+
+/* Dark mode as default */
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--ddv-bg-primary);
+  color: var(--ddv-text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism base styles */
+.glass {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--ddv-bigsis);
+  outline-offset: 2px;
+}
+
+/* Selection colors */
+::selection {
+  background-color: var(--ddv-bigsis);
+  color: black;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

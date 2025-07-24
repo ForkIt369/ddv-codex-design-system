@@ -236,7 +236,7 @@ export const ProgressBar = forwardRef<HTMLDivElement, ProgressBarProps>(
                 className={cn(
                   'absolute inset-0',
                   'bg-gradient-to-r',
-                  stripeStyles[agent],
+                  agent ? stripeStyles[agent] : stripeStyles.bigSis,
                   'bg-[length:20px_20px]',
                   animated && 'animate-stripe-slide'
                 )}
